@@ -5,23 +5,23 @@ from telegram import ParseMode, Message
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler, run_async
 
-import SaitamaRobot.modules.sql.notes_sql as sql
-from SaitamaRobot import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER
-from SaitamaRobot.__main__ import DATA_IMPORT
-from SaitamaRobot.modules.helper_funcs.chat_status import user_admin
-from SaitamaRobot.modules.helper_funcs.alternate import typing_action
+import LEGEND.modules.sql.notes_sql as sql
+from LEGEND import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER
+from LEGEND.__main__ import DATA_IMPORT
+from LEGEND.modules.helper_funcs.chat_status import user_admin
+from LEGEND.modules.helper_funcs.alternate import typing_action
 
-# from SaitamaRobot.modules.rules import get_rules
-import SaitamaRobot.modules.sql.rules_sql as rulessql
+# from LEGEND.modules.rules import get_rules
+import LEGEND.modules.sql.rules_sql as rulessql
 
-# from SaitamaRobot.modules.sql import warns_sql as warnssql
-import SaitamaRobot.modules.sql.blacklist_sql as blacklistsql
-from SaitamaRobot.modules.sql import disable_sql as disabledsql
+# from LEGEND.modules.sql import warns_sql as warnssql
+import LEGEND.modules.sql.blacklist_sql as blacklistsql
+from LEGEND.modules.sql import disable_sql as disabledsql
 
-# from SaitamaRobot.modules.sql import cust_filters_sql as filtersql
-# import SaitamaRobot.modules.sql.welcome_sql as welcsql
-import SaitamaRobot.modules.sql.locks_sql as locksql
-from SaitamaRobot.modules.connection import connected
+# from LEGEND.modules.sql import cust_filters_sql as filtersql
+# import LEGEND.modules.sql.welcome_sql as welcsql
+import LEGEND.modules.sql.locks_sql as locksql
+from LEGEND.modules.connection import connected
 
 
 @run_async
