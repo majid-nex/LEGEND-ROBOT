@@ -11,7 +11,7 @@ from telegram.ext import CallbackContext
 from telegram.error import BadRequest
 
 from LEGEND import (DEV_USERS, OWNER_ID,
-                           DRAGONS, dispatcher, client)
+                           DRAGONS, dispatcher)
 from LEGEND.__main__ import USER_INFO, TOKEN
 from LEGEND.modules.disable import DisableAbleCommandHandler
 from LEGEND.modules.sql.afk_sql import is_afk, check_afk_status
