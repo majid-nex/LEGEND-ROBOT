@@ -11,7 +11,7 @@ from telegram.ext import CallbackContext
 from telegram.error import BadRequest
 
 from LEGEND import (DEV_USERS, OWNER_ID,
-                           WHITELIST_USERS, dispatcher, client)
+                           DRAGONS, dispatcher, client)
 from LEGEND.__main__ import USER_INFO, TOKEN
 from LEGEND.modules.disable import DisableAbleCommandHandler
 from LEGEND.modules.sql.afk_sql import is_afk, check_afk_status
@@ -119,7 +119,7 @@ def info(update: Update, context: CallbackContext):
         text += "\nThis person is my dev\nI would never do anything against him!."
 
        
-    elif user.id in WHITELIST_USERS:
+    elif user.id in DRAGONS:
         text += "\nThis person has been whitelisted! " \
                         "That means I'm not allowed to ban/kick them."
     
