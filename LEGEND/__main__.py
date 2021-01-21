@@ -52,7 +52,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 ✨Hey {}, I am ✨ {} ~.
-Im an Anime themed Group Management Bot, feel free to add me to your groups!
+Im an Anime themed + Super Group Management Bot, feel free to add me to your groups!
 You can find my list of available commands with /help.
 """
 
@@ -67,7 +67,7 @@ Here is modules:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can be triggered with the following: /, !.\n")
 
-SAITAMA_IMG = "https://telegra.ph/file/23ea02d917b6a3c0f5d5c.jpg"
+LEGEND_IMG = "https://telegra.ph/file/84b2017bc2f3c90f2e61c.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 Ruhani is hosted on one of Heroku's Servers and doesn't require any donations as of now but \
@@ -181,7 +181,7 @@ def start(update: Update, context: CallbackContext):
         else:
             first_name = update.effective_user.first_name
             update.effective_message.reply_photo(
-                SAITAMA_IMG,
+                LEGEND_IMG,
                 PM_START_TEXT.format(
                     escape_markdown(first_name),
                     escape_markdown(context.bot.first_name)),
@@ -196,19 +196,19 @@ def start(update: Update, context: CallbackContext):
                      ],
                      [
                         InlineKeyboardButton(
-                            text=" 🦅 Join KWS ",
-                            url="https://t.me/Kws_Team"),
+                            text=" ⚡ Join team x ",
+                            url="https://t.me/teamishere"),
                          InlineKeyboardButton(
                             text=" ❤️ Channel ",
-                             url="https://t.me/Melody_Music_Zone")        
+                             url="https://t.me/hackerget0")        
                       ],
                       [ 
                         InlineKeyboardButton(
                              text=" ✨ Support ",
-                             url="https://t.me/Ruhani_Support_Chat"),
+                             url="https://t.me/Legend_userbot_support"),
                         InlineKeyboardButton(
                              text=" 👨‍💻 Creator ",
-                             url="https://t.me/Hope_op")
+                             url="https://t.me/legendx22")
                     
                     ]]))
     else:
