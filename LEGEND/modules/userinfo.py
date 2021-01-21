@@ -21,7 +21,7 @@ import LEGEND.modules.sql.userinfo_sql as sql
 from LEGEND.modules.disable import DisableAbleCommandHandler
 from LEGEND.modules.sql.global_bans_sql import is_user_gbanned
 from LEGEND.modules.sql.afk_sql import is_afk, check_afk_status
-from LEGRND.modules.sql.users_sql import get_user_num_chats
+from LEGEND.modules.sql.users_sql import get_user_num_chats
 from LEGEND.modules.helper_funcs.chat_status import sudo_plus
 from LEGEND.modules.helper_funcs.extraction import extract_user
 from LEGEND import telethn as SaitamaTelethonClient, TIGERS, DRAGONS, DEMONS
