@@ -16,7 +16,8 @@ from LEGEND.__main__ import USER_INFO, TOKEN
 from LEGEND.modules.disable import DisableAbleCommandHandler
 from LEGEND.modules.sql.afk_sql import is_afk, check_afk_status
 from LEGEND.modules.sql.users_sql import get_user_num_chats
-from LEGEND.modules.helper_funcs.extraction import extract_user, get_user
+from LEGEND.modules.helper_funcs.extraction import extract_user
+from LEGEND.modules.helper_funcs.info import get_user
 import LEGEND.modules.sql.userinfo_sql as sql
 import LEGEND.modules.helper_funcs.cas_api as cas
 from telegram.utils.helpers import escape_markdown, mention_html
