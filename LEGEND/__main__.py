@@ -56,6 +56,12 @@ Im an Anime themed + Super Group Management Bot, feel free to add me to your gro
 You can find my list of available commands with /help.
 """
 
+SOURCE_STRING = """
+⚡I'm built in python3, using the python-telegram-bot library, and am fully opensource - you can find what makes me tick [here](https://github.com/legendxop/LEGEND-ROBOT)
+⚡You Can Clone Me [Here](https://heroku.com/deploy?template=https://github.com/legendxop/LEGEND-ROBOT.git)
+"""
+
+
 HELP_STRINGS = """
 Hey there! My name is *{}*.
 
