@@ -136,7 +136,7 @@ def list_chatbot_chats(update: Update, context: CallbackContext):
 
 
 __help__ = f"""
-Chatbot utilizes the CoffeeHouse API and allows Ruhani to talk and provides a more interactive group chat experience.
+Chatbot utilizes the CoffeeHouse API and allows LEGEND BOT to talk and provides a more interactive group chat experience.
 
 *Commands:* 
 ➩ *Admins only:*
