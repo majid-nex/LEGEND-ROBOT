@@ -214,7 +214,7 @@ Blue text cleaner removed any made up commands that people send in your chat.
  - `/listblue`*:* list currently whitelisted commands
  
  ➩ *Disasters commands, admins cannot use these:*
- - `/gignoreblue <word>`*:* globally ignorea bluetext cleaning of saved word across Ruhani.
+ - `/gignoreblue <word>`*:* globally ignorea bluetext cleaning of saved word across LEGEND.
  - `/ungignoreblue <word>`*:* remove said command from global cleaning list
 """
 
