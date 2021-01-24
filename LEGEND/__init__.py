@@ -8,7 +8,7 @@ from pyrogram import Client, errors
 
 import telegram.ext as tg
 from telethon import TelegramClient
-
+update = TelegramClient(None, API_ID, API_HASH)
 StartTime = time.time()
 
 # enable logging
