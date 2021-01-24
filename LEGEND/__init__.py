@@ -8,7 +8,7 @@ from pyrogram import Client, errors
 
 import telegram.ext as tg
 from telethon import TelegramClient
-update = TelegramClient(None, API_ID, API_HASH)
+
 StartTime = time.time()
 
 # enable logging
@@ -170,6 +170,9 @@ else:
     except ValueError:
         raise Exception(
             "Your blacklisted chats list does not contain valid integers.")
+# this is updter nyce
+update = TelegramClient(None, API_ID, API_HASH)
+
 
 DRAGONS.add(OWNER_ID)
 
