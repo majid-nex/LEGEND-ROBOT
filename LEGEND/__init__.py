@@ -164,6 +164,7 @@ else:
     SPAMWATCH_SUPPORT_CHAT = Config.SPAMWATCH_SUPPORT_CHAT
     SPAMWATCH_API = Config.SPAMWATCH_API
     INFOPIC = Config.INFOPIC
+UPSTREAM_REPO_URL = "https://github.com/LEGENDXOP/LEGEND-ROBOT"
 
     try:
         BL_CHATS = set(int(x) for x in Config.BL_CHATS or [])
