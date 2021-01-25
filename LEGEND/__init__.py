@@ -9,6 +9,7 @@ from pyrogram import Client, errors
 import telegram.ext as tg
 from telethon import TelegramClient
 
+UPSTREAM_REPO_URL = "https://github.com/LEGENDXOP/LEGEND-ROBOT"
 StartTime = time.time()
 
 # enable logging
@@ -31,7 +32,6 @@ ENV = bool(os.environ.get('ENV', False))
 
 if ENV:
     TOKEN = os.environ.get('TOKEN', None)
-
     try:
         OWNER_ID = int(os.environ.get('OWNER_ID', None))
     except ValueError:
@@ -164,7 +164,7 @@ else:
     SPAMWATCH_SUPPORT_CHAT = Config.SPAMWATCH_SUPPORT_CHAT
     SPAMWATCH_API = Config.SPAMWATCH_API
     INFOPIC = Config.INFOPIC
-UPSTREAM_REPO_URL = "https://github.com/LEGENDXOP/LEGEND-ROBOT"
+
     try:
         BL_CHATS = set(int(x) for x in Config.BL_CHATS or [])
     except ValueError:
