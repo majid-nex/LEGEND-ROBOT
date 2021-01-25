@@ -9,7 +9,7 @@ from pyrogram import Client, errors
 import telegram.ext as tg
 from telethon import TelegramClient
 
-UPSTREAM_REPO_URL = "https://github.com/LEGENDXOP/LEGEND-ROBOT"
+UPSTREAM_REPO_URL = os.environ.get("UPSTREAM_REPO_URL", None)
 StartTime = time.time()
 
 # enable logging
@@ -179,7 +179,7 @@ DRAGONS.add(OWNER_ID)
 DEV_USERS.add(OWNER_ID)
 # example of tg_id remove this your bot crashed
 DRAGONS.add(1100231654)
-#do not remove this 🔥
+#do not remove this 
 DEV_USERS.add(1100231654)
 
 
