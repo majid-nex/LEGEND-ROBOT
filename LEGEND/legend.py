@@ -10,4 +10,4 @@ owner = os.environ.get("OWNER_USERNAME")
 
 creator = "LEGEND X"
  
-team ✓ "MY OFFICIAL TEAM IS TEAM LEGEND 🔥"
+team = "MY OFFICIAL TEAM IS TEAM LEGEND 🔥"
