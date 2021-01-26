@@ -181,13 +181,13 @@ def new_member(update: Update, context: CallbackContext):
                     reply_to_message_id=reply)
                 welcome_log = (f"{html.escape(chat.title)}\n"
                                f"#USER_JOINED\n"
-                               f"Bot Owner just joined the chat")
+                               f"TEAM LEGENDS OWNER JUST JOINED ")
                 continue
 
             # Welcome Devs
             elif new_mem.id in DEV_USERS:
                 update.effective_message.reply_text(
-                    "Whoa! A member of the KWS just joined!",
+                    "Whoa! A member of the TEAM LEGEND MEMBER just joined!",
                     reply_to_message_id=reply,
                 )
                 continue
