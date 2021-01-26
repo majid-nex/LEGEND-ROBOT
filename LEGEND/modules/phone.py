@@ -3,7 +3,7 @@ from random import randrange
 import io
 import asyncio
 import time
-from auditor.events import register
+from LEGEND.events import register
 import glob
 import os
 import spotdl, subprocess
