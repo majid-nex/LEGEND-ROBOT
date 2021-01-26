@@ -1,4 +1,4 @@
-from telethon import events
+"""from telethon import events
 from random import randrange
 import io
 import asyncio
@@ -73,3 +73,4 @@ async def phone(event):
     f = "Device: " +str(line_type)
     g = f"{aa}\n{a}\n{b}\n{c}\n{d}\n{e}\n{f}"
     await event.reply(g)
+"""
