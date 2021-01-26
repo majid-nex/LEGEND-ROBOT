@@ -5,13 +5,7 @@ from sql_helpers import forceSubscribe_sql as sql
 from pyrogram.types import ChatPermissions, InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant, UsernameNotOccupied, ChatAdminRequired, PeerIdInvalid
 
-okk = os.environ.get("TOKEN", "Maa ka bhsoda")
-client = Client(
-    "my_bot",
-    bot_token=okk
-)
 
-client.run()
 
 logging.basicConfig(level=logging.INFO)
 
