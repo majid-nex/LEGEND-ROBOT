@@ -19,7 +19,7 @@ plugins = dict(
     ]
 )
 
-app = Client(
+client = Client(
      'ForceSubscribe',
       bot_token = Config.BOT_TOKEN,
       api_id = Config.APP_ID,
@@ -27,4 +27,4 @@ app = Client(
       plugins = plugins
 )
 
-app.run()
+client.run()
