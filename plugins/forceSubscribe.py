@@ -1,15 +1,22 @@
 import time
 import logging
-from Config import Config
 from pyrogram import Client, filters
 from sql_helpers import forceSubscribe_sql as sql
 from pyrogram.types import ChatPermissions, InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant, UsernameNotOccupied, ChatAdminRequired, PeerIdInvalid
 
+okk = os.environ.get("TOKEN", "Maa ka bhsoda")
+client = Client(
+    "my_bot",
+    bot_token=okk
+)
+
+client.run()
+
 logging.basicConfig(level=logging.INFO)
 
 static_data_filter = filters.create(lambda _, __, query: query.data == "onUnMuteRequest")
-@Client.on_callback_query(static_data_filter)
+@client.on_callback_query(static_data_filter)
 def _onUnMuteRequest(client, cb):
   user_id = cb.from_user.id
   chat_id = cb.message.chat.id
@@ -37,7 +44,7 @@ def _onUnMuteRequest(client, cb):
 
 
 
-@Client.on_message(filters.text & ~filters.private & ~filters.edited, group=1)
+@client.on_message(filters.text & ~filters.private & ~filters.edited, group=1)
 def _check_member(client, message):
   chat_id = message.chat.id
   chat_db = sql.fs_settings(chat_id)
@@ -65,7 +72,7 @@ def _check_member(client, message):
         client.leave_chat(chat_id)
 
 
-@Client.on_message(filters.command(["forcesubscribe", "fsub"]) & ~filters.private)
+@client.on_message(filters.command(["forcesubscribe", "fsub"]) & ~filters.private)
 def config(client, message):
   user = client.get_chat_member(message.chat.id, message.from_user.id)
   if user.status is "creator" or user.user.id in Config.SUDO_USERS:
