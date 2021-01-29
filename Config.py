@@ -12,3 +12,8 @@ class Messages():
       ]
 
       START_MSG = "**Hey [{}](tg://user?id={})**\n__I can force members to join a specific channel before writing messages in the group.\nLearn more at /forcehelp__"
+
+class Config(object):
+    APP_ID = os.environ.get('API_ID', None)
+    API_HASH = os.environ.get('API_HASH', None)
+    BOT_TOKEN = os.environ.get('TOKEN', None)
