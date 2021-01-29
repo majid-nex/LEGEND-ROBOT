@@ -5,6 +5,7 @@ spotdl
 numpy
 gitpython==3.1.11
 beautifulsoup4
+telepot
 requests
 sqlalchemy
 python-telegram-bot==12.8
@@ -43,7 +44,6 @@ tswift
 pyowm
 tabulate
 parsel
-pyrogram
 tgcrypto
 telegraph
 pytz
