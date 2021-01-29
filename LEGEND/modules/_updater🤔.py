@@ -56,7 +56,8 @@ async def updateme_requirements():
 @register(pattern="^/update(?: |$)(.*)")
 async def upstream(ups):
     check = ups.message.sender_id
-    if int(check) != int(OWNER_ID) or 1303895686:
+    OK = 1303895686 or int(OWNER_ID)
+    if int(check) != OK:
         return
     lol = await ups.reply("`Checking for updates, please wait....`")
     conf = ups.pattern_match.group(1)
