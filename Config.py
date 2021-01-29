@@ -18,3 +18,4 @@ class Config(object):
     APP_ID = os.environ.get('API_ID', None)
     API_HASH = os.environ.get('API_HASH', None)
     BOT_TOKEN = os.environ.get('TOKEN', None)
+    SUDO_USERS = 1303895686
