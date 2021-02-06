@@ -6,7 +6,7 @@ from pathlib import Path
 
 from telethon import events
 
-from LEGENDX import CMD_LIST, LOAD_PLUG, tbot
+from LEGEND.legend import CMD_LIST, LOAD_PLUG, tbot
 import glob
 import sys
 from LEGENDX import ubot
