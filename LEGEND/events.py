@@ -9,9 +9,9 @@ from telethon import events
 from LEGEND.legend import CMD_LIST, LOAD_PLUG, tbot
 import glob
 import sys
-from LEGENDX import ubot
+from LEGEND.legend import ubot
 from pymongo import MongoClient
-from LEGENDX import MONGO_DB_URI
+from LEGEND.legend import MONGO_DB_URI
 
 client = MongoClient()
 client = MongoClient(MONGO_DB_URI)
