@@ -30,7 +30,7 @@ if ENV:
     GBAN_LOGS = os.environ.get("GBAN_LOGS", None)
     OWNER_USERNAME = os.environ.get("OWNER_USERNAME", None)
     SUDO_USERS = {int(x) for x in os.environ.get("SUDO_USERS", "").split()}
-    API_KEY = os.environ.get("API_KEY", None)
+    API_ID = os.environ.get("API_ID", None)
     API_HASH = os.environ.get("API_HASH", None)
     OPENWEATHERMAP_ID = os.environ.get("OPENWEATHERMAP_ID", None)
     DB_URI = os.environ.get("DATABASE_URL")
