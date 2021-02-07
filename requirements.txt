@@ -1,4 +1,5 @@
 future
+pip
 emoji
 lxml
 spotdl
