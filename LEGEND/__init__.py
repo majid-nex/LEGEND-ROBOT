@@ -211,13 +211,6 @@ if STRING_SESSION:
         print("Network Error !")
         sys.exit(1)
 
-else:
-    sys.exit(1)
-
-
-
-
-
 
 
 DRAGONS = list(DRAGONS) + list(DEV_USERS)
