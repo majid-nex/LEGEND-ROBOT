@@ -11,7 +11,7 @@ from telethon import TelegramClient
 
 UPSTREAM_REPO_URL = os.environ.get("UPSTREAM_REPO_URL", None)
 StartTime = time.time()
-
+CMD_LIST = {}
 # enable logging
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -150,6 +150,8 @@ else:
     DB_URI = Config.SQLALCHEMY_DATABASE_URI
     DONATION_LINK = Config.DONATION_LINK
     LOAD = Config.LOAD
+    STRING_SESSION = os.environ.get("STRING_SESSION", None)
+    tbot = TelegramClient(None, API_KEY, API_HASH)
     NO_LOAD = Config.NO_LOAD
     DEL_CMDS = Config.DEL_CMDS
     STRICT_GBAN = Config.STRICT_GBAN
@@ -197,6 +199,26 @@ updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
 telethn = TelegramClient("saitama", API_ID, API_HASH)
 pbot = Client("senkuPyro", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 dispatcher = updater.dispatcher
+
+if STRING_SESSION:
+        ubot = TelegramClient(StringSession(STRING_SESSION), API_KEY, API_HASH)
+    else:
+        sys.exit(1)
+
+    try:
+        ubot.start()
+    except BaseException:
+        print("Network Error !")
+        sys.exit(1)
+
+else:
+    sys.exit(1)
+
+
+
+
+
+
 
 DRAGONS = list(DRAGONS) + list(DEV_USERS)
 DEV_USERS = list(DEV_USERS)
