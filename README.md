@@ -20,4 +20,4 @@ Reveal config vars me jaao port ko delete krdo aur wheebook ko bhi the. WAIT 2-3
 Deploy link 👇
 ```
 
-# [DEPLOY HERE](https://heroku.com/deploy?template=https://github.com/AnimeKaizoku/SaitamaRobot.git)
+  [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/majid-nex/legend-robot.git)
