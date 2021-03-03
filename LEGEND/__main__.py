@@ -203,7 +203,7 @@ def start(update: Update, context: CallbackContext):
                      [
                         InlineKeyboardButton(
                             text=" ⚡ updates ",
-                            url="https://t.me/zerotwosupport"),
+                            url="https://t.me/zerotwoupdate"),
                          InlineKeyboardButton(
                             text=" ❤️ support ",
                              url="https://t.me/zerotwosupport")        
@@ -211,7 +211,7 @@ def start(update: Update, context: CallbackContext):
                       [ 
                         InlineKeyboardButton(
                              text=" ✨ logs ",
-                             url="https://t.me/zerotwosupport"),
+                             url="https://t.me/zerotwolog"),
                         InlineKeyboardButton(
                              text=" 👨‍💻 Creator ",
                              url="https://t.me/mr_godfather9")
