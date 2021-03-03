@@ -73,7 +73,7 @@ Here is modules:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can be triggered with the following: /, !.\n")
 
-LEGEND_IMG = "https://telegra.ph/file/84b2017bc2f3c90f2e61c.jpg"
+LEGEND_IMG = "https://telegra.ph/file/5480c2bb0aef9d8715e76.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 LEGEND is hosted on one of Heroku's Servers and doesn't require any donations as of now but \
@@ -196,25 +196,25 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text=" 👸 Invite me in your place ",
+                            text="  Invite me in your place ",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username)),
                      ],
                      [
                         InlineKeyboardButton(
-                            text=" ⚡ Join team x ",
-                            url="https://t.me/teamishere"),
+                            text=" ⚡ updates ",
+                            url="https://t.me/zerotwosupport"),
                          InlineKeyboardButton(
-                            text=" ❤️ Channel ",
-                             url="https://t.me/hackerget0")        
+                            text=" ❤️ support ",
+                             url="https://t.me/zerotwosupport")        
                       ],
                       [ 
                         InlineKeyboardButton(
-                             text=" ✨ Support ",
-                             url="https://t.me/Legend_userbot_support"),
+                             text=" ✨ logs ",
+                             url="https://t.me/zerotwosupport"),
                         InlineKeyboardButton(
                              text=" 👨‍💻 Creator ",
-                             url="https://t.me/legendx22")
+                             url="https://t.me/mr_godfather9")
                     
                     ]]))
     else:
